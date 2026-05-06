@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Your Name</title>
+  <title>About Me | 刘科言</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <div class="container header-container">
-      <div class="logo"><a href=" ">刘科言</a ></div>
+      <div class="logo"><a href="index.html">刘科言</a></div>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a ></li>
-          <li><a href="about.html" class="active">About</a ></li>
-          <li><a href="projects.html">Projects</a ></li>
-          <li><a href="contact.html">Contact</a ></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -26,36 +26,46 @@
     <section class="page-header">
       <div class="container">
         <h1>About Me</h1>
-        <p>Get to know me a little better</p >
+        <p>Get to know me a little better</p>
       </div>
     </section>
 
     <section class="about-content">
       <div class="container about-grid">
+        <!-- 左侧：两个独立信息的卡片 -->
         <div class="about-text">
-          <h2>Who am I?</h2>
-          <p>I'm a ‌Software Engineering student at Macau University of Science and Technology‌. I'm currently learning web development and front-end technologies.</p >
-          <p>Currently, I'm focused on front-end development and responsive design, always learning new techniques to stay up-to-date.</p >
-          <h3>💡 Soft Skills</h3>
-          <ul>
-            <li>Problem solving & attention to detail</li>
-            <li>Team collaboration & clear communication</li>
-            <li>Time management & self-motivation</li>
-          </ul>
+          <!-- 卡片1：Who am I? -->
+          <div class="info-card">
+            <h2>Who am I?</h2>
+            <p>I'm a Software Engineering student at Macau University of Science and Technology. I'm currently learning web development and front-end technologies.</p>
+            <p>Currently, I'm focused on front-end development and responsive design, always learning new techniques to stay up-to-date.</p>
+          </div>
+
+          <!-- 卡片2：Soft Skills（添加额外类名用于下移间距） -->
+          <div class="info-card soft-skills-card">
+            <h3>💡 Soft Skills</h3>
+            <ul>
+              <li>Problem solving & attention to detail</li>
+              <li>Team collaboration & clear communication</li>
+              <li>Time management & self-motivation</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- 右侧：技术标签 + 放大的头像图片 -->
         <div class="about-skills">
           <h3>🛠️ Technical Skills</h3>
           <div class="skill-tags">
             <span>HTML5</span>
             <span>CSS3</span>
-            <span>Database</span>
             <span>Flexbox/Grid</span>
             <span>Responsive Design</span>
             <span>Git & GitHub</span>
+            <span>JavaScript (Learning)</span>
           </div>
           <div class="about-extra-img">
-            < img src="image/avatar.png"
-                 alt="coding illustration">
+            <!-- 图片路径使用已经确认有效的 avatar.jpg，并添加类名以便放大 -->
+            <img src="images/page.png" alt="刘科言的照片" class="about-profile-img">
           </div>
         </div>
       </div>
@@ -64,7 +74,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 lky – Built with ❤️ using HTML & CSS</p >
+      <p>© 2025 刘科言 – Built with ❤️ using HTML & CSS</p>
     </div>
   </footer>
 

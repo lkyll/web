@@ -46,8 +46,10 @@ h3 {
 
 /* ---------- HEADER & NAVIGATION ---------- */
 header {
-  background-color: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  background-color:#e0e7ff;
+  border-radius: 24px;
+  margin: 16px 20px 0 20px;
+  box-shadow: 0 8px 16px -6px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -126,15 +128,21 @@ header {
   color: #475569;
   margin: 1rem 0 2rem;
 }
-
+.hero-text,
+.future-card{
+  background: #dbeafe;
+  border-radius: 28px;
+  padding : 2rem;
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.05);
+}
 .hero-image {
   flex: 1;
   text-align: center;
 }
 
 .profile-img {
-  width: 260px;
-  height: 260px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15);
@@ -154,10 +162,10 @@ header {
 }
 
 .feature-card {
-  background: white;
+  background:#e0f2fe;
   padding: 1.8rem;
   border-radius: 24px;
-  box-shadow: 0 4px 6px -2px #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   text-align: center;
   transition: transform 0.2s;
 }
@@ -215,8 +223,8 @@ header {
 .about-extra-img img,
 .map-placeholder {
   width: 100%;
-  border-radius: 20px;
-  margin-top: 1rem;
+  border-radius: 32px;
+  
 }
 
 /* ---------- PROJECTS PAGE (GRID) ---------- */
@@ -226,12 +234,12 @@ header {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2,1fr);
   gap: 2rem;
 }
 
 .project-card {
-  background: white;
+  background: #e0f2fe;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 10px 20px -5px rgba(0,0,0,0.05);
@@ -246,7 +254,7 @@ header {
 
 .project-card img {
   width: 100%;
-  height: 180px;
+  height: 260px;
   object-fit: cover;
 }
 
@@ -401,4 +409,54 @@ footer {
   .btn {
     padding: 0.6rem 1.2rem;
   }
+}
+/* ===== About 页面新增样式 ===== */
+
+/* 1. 浅蓝色圆角背景框（与首页风格一致） */
+.info-card {
+  background-color: #e0f2fe;
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;      /* 卡片之间的垂直间距 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 2. Soft Skills 卡片额外下移（拉大与上一卡片的距离） */
+.soft-skills-card {
+  margin-top: 1rem;         /* 增加上边距，让 Soft Skills 区域更靠下 */
+}
+
+/* 3. 放大右侧图片（更大且居中） */
+.about-profile-img {
+  width: 100%;
+  max-width: 700px;         /* 明显放大，可根据喜好调整 */
+  border-radius: 24px;
+  display: block;
+  margin: 1.5rem auto 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* 移动端适配：图片稍微缩小一点 */
+@media (max-width: 768px) {
+  .about-profile-img {
+    max-width: 280px;
+  }
+  .info-card {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.map-placeholder {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover
+  border-radius: 20px;
+  background-color: #f3f4f6;
+  margin-top: 1.5rem;
 }
