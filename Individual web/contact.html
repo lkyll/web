@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo"><a href=" ">Your Name</a ></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a ></li>
+          <li><a href="about.html">About</a ></li>
+          <li><a href="projects.html">Projects</a ></li>
+          <li><a href="contact.html" class="active">Contact</a ></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Let's Connect</h1>
+        <p>I'd love to hear from you – whether it's a project, question, or just a chat</p >
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <!-- 联系表单 (纯展示) -->
+        <div class="contact-form">
+          <h2>Send a Message</h2>
+          <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Alex Johnson" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..."></textarea>
+
+            <button type="submit" class="btn">Send Message →</button>
+          </form>
+          <p class="form-note">* This is a static demo – no data will be stored.</p >
+        </div>
+
+        <!-- 联系信息卡片 -->
+        <div class="contact-info">
+          <h2>Contact Info</h2>
+          <div class="info-item">
+            <span class="emoji">📧</span>
+            <p>alex.johnson@example.com</p >
+          </div>
+          <div class="info-item">
+            <span class="emoji">📱</span>
+            <p>+1 (555) 123-4567</p >
+          </div>
+          <div class="info-item">
+            <span class="emoji">🌍</span>
+            <p>Toronto, Canada</p >
+          </div>
+          <div class="social-links">
+            <a href="#">GitHub</a >
+            <a href="#">LinkedIn</a >
+            <a href="#">Twitter</a >
+          </div>
+          < img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 120'%3E%3Crect width='300' height='120' fill='%23f3f4f6'/%3E%3Ctext x='150' y='65' text-anchor='middle' fill='%236b7280'%3EMap placeholder%3C/text%3E%3C/svg%3E"
+               alt="map placeholder" class="map-placeholder">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Alex Johnson – Built with ❤️ using HTML & CSS</p >
+    </div>
+  </footer>
+
+</body>
+</html>
